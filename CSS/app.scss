@@ -1,0 +1,15 @@
+@use 'header';
+@use 'dashboard';
+@use 'buttons';
+@use 'body';
+
+body {
+    margin: 0;
+    overflow: hidden;
+    header {
+        .backgroundimg {
+            height:100%;
+            width: 100%;
+        }
+    } 
+}
