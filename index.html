@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/app.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Tailwind Project</title>
 </head>
 <body>
@@ -11,42 +12,62 @@
         <!-- Backdrop -->
         <img src="Images/Corvette.jpg" alt="Background" class="backgroundimg"></img>
     </header>
-    <div class="flex flex-col z-1 left-0 bg-white">
-        <div class="w-100s h-100 text-base">applayout</div>
-        <div class="w-100 h-100 text-base">layouticon</div>
-        <div class="w-100 h-100 text-base">musicicon</div>
-        <div class="w-100 h-100 text-base">streamingicon</div>
-        <div class="w-100 h-100 text-base">searchicon</div>
-    </div>
-    <!-- Content of your page goes here -->
-    <div class="base">
-        
-        <div class="dashboard">
-            <div class="logo"></div>
-            <div class="dashbuttons">
-                <div class="browsebutton"></div>
-                <div class="wishlistbutton"></div>
-                <div class="comingsoonbutton"></div>
+    <div class="h-screen w-screen align-middle items-center flex">
+        <div class="flex flex-col justify-center items-center w-20 z-10 bg-slate-700 align-middle mx-10 rounded-full p-3">
+            <div class="my-2">
+                <div class="bg-red-700 w-12 h-12 rounded-full"></div>
             </div>
-            <div class="new-cars"></div>
+            <div class="my-2">
+                <div class="bg-red-700 w-12 h-12 rounded-full"></div>
+            </div>
+            <div class="my-2">
+                <div class="bg-red-700 w-12 h-12 rounded-full"></div>
+            </div>
+            <div class="my-2">
+                <div class="bg-red-700 w-12 h-12 rounded-full"></div>
+            </div>
+            <div class="my-2">
+                <div class="bg-red-700 w-12 h-12 rounded-full"></div>
+            </div>
         </div>
-        <!-- Header -->
-        <div class="header">
-            <div class="arrows">
-                <div class="Larrow"></div>
-                <div class="Rarrow"></div>
+        <!-- Content of your page goes here -->
+        <div class="flex w-screen z-10 bg-slate-700 rounded-lg">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <img src="Images/logo.png" alt="logo" class="logoimg">
+                <div class="dashbuttons">
+                    <div class="browsebutton">Browse</div>
+                    <div class="wishlistbutton">Wishlist</div>
+                    <div class="comingsoonbutton">Coming Soon</div>
+                </div>
+                <div class="trailers">New Cars</div>
+                <div class="new-cars">
+                    <div class="h-20 w-32 bg-blue-600 rounded-lg my-3"></div>
+                    <div class="h-20 w-32 bg-blue-600 rounded-lg my-3"></div>
+                    <div class="h-20 w-32 bg-blue-600 rounded-lg my-3"></div>
+                </div>
             </div>
-            <div class="search">
-                <div class="mic-icon"></div>
-                <input type="text" placeholder="Search..."/>
+            <!-- Header -->
+            <div class="top-0 flex">
+                <div class="flex">
+                    <div class="Larrow">+-</div>
+                    <div class="Rarrow">-+</div>
+                </div>
+                <div class="flex">
+                    <div class="mic-icon">mic</div>
+                    <input type="text" placeholder="Search..." class="search"/>
+                </div>
+                <div class="notification">circle notif</div>
+                <div class="account">Email@gmail.com</div>
             </div>
-            <div class="notification"></div>
-            <div class="account"></div>
+    
+            <!-- Main Body -->
+            <div class="content">
+                <img src="Images/Jesko.jpg" alt="banner" class="bannerimg">
+            </div>
         </div>
-
-        <!-- Main Body -->
-        <div class="content"></div>
     </div>
+    
 
 </body>
 </html>

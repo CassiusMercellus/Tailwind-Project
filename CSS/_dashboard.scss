@@ -1,0 +1,12 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    .logoimg {
+        width : 350px;
+        height : 225px;
+    }
+    .dashbuttons {
+        display: flex;
+        flex-direction: column;
+    }
+}
