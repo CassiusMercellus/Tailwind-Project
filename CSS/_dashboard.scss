@@ -1,12 +1,36 @@
-.dashboard {
-    display: flex;
+@import 'mixin';
+@import 'var';
+
+.left-app-buttons {
+    display:flex;
     flex-direction: column;
-    .logoimg {
-        width : 350px;
-        height : 225px;
+    background-color: gray;
+    z-index: 1;
+    margin: 10px;
+    padding: 10px 5px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-style:outset;
+    border-color: gray;
+    .app-button-1 {
+        @include app-button;
+        background-color: $appbuttonselected;
     }
-    .dashbuttons {
-        display: flex;
-        flex-direction: column;
+    .app-button-2 {
+        @include app-button;
+        background-color: $appbuttonunselected;
+    }
+    .app-button-3 {
+        @include app-button;
+        background-color: $appbuttonunselected;
+    }
+    .app-button-4 {
+        @include app-button;
+        background-color: $appbuttonunselected;
+    }
+    .app-button-5 {
+        @include app-button;
+        background-color: $appbuttonunselected;
     }
 }
+

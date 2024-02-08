@@ -1,23 +1,194 @@
-.search {
-  height: 20px;
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .arrows {
+  display: flex;
 }
 
-.dashboard {
+.left-app-buttons {
   display: flex;
   flex-direction: column;
+  background-color: gray;
+  z-index: 1;
+  margin: 10px;
+  padding: 10px 5px;
+  border-radius: 30px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: gray;
 }
-.dashboard .logoimg {
-  width: 350px;
-  height: 225px;
-}
-.dashboard .dashbuttons {
+.left-app-buttons .app-button-1 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0px;
+  background-color: red;
+}
+.left-app-buttons .app-button-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0px;
+  background-color: gray;
+}
+.left-app-buttons .app-button-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0px;
+  background-color: gray;
+}
+.left-app-buttons .app-button-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0px;
+  background-color: gray;
+}
+.left-app-buttons .app-button-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0px;
+  background-color: gray;
 }
 
-.bannerimg {
-  width: 900px;
+.main-banner .banner1img {
+  width: 1000px;
   height: 500px;
+}
+.main-banner .bannerlogo {
+  font-size: 32px;
+}
+.main-banner .banner-desc {
+  font-size: 24px;
+}
+.main-banner .main-banner-footer {
+  display: flex;
+  background-image: url(/Images/Bugatti.jpg);
+}
+.main-banner .main-banner-footer .banner-left .shopping .watchbutton {
+  background-color: red;
+}
+.main-banner .main-banner-footer .banner-left .shopping .addmore {
+  background-color: rgb(167, 167, 167);
+}
+.main-banner .main-banner-footer .banner-right {
+  display: flex;
+}
+.main-banner .main-banner-footer .banner-right .right-icon-1 .right1img {
+  width: 150px;
+  height: 90px;
+}
+.main-banner .main-banner-footer .banner-right .right-icon-2 .right1img {
+  width: 150px;
+  height: 90px;
+}
+.main-banner .main-banner-footer .banner-right .right-icon-3 .right1img {
+  width: 150px;
+  height: 90px;
+}
+
+.Sidebar {
+  border-width: 2px;
+  border-style: outset;
+  border-color: gray;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 20px;
+}
+.Sidebar .logoimg {
+  width: 200px;
+  height: 150px;
+}
+.Sidebar .sidebuttons .browsebutton {
+  display: flex;
+  margin: 25px 5px;
+  color: white;
+}
+.Sidebar .sidebuttons .wishlistbutton {
+  display: flex;
+  margin: 25px 5px;
+  color: white;
+}
+.Sidebar .sidebuttons .comingsoonbutton {
+  display: flex;
+  margin: 25px 5px;
+  color: white;
+}
+.Sidebar .trailers {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.Sidebar .new-cars {
+  margin-top: 0px 20px;
+}
+.Sidebar .new-cars img {
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  z-index: 0;
+}
+.Sidebar .new-cars .sidepanel1 {
+  margin: 15px 0px;
+  border-radius: 15px;
+}
+.Sidebar .new-cars .sidepanel1 .panelfooter {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+.Sidebar .new-cars .sidepanel2 {
+  margin: 15px 0px;
+  border-radius: 15px;
+}
+.Sidebar .new-cars .sidepanel2 .panelfooter {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+.Sidebar .new-cars .sidepanel3 {
+  margin: 15px 0px;
+  border-radius: 15px;
+}
+.Sidebar .new-cars .sidepanel3 .panelfooter {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+
+.entire-page {
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  background-color: gray;
+  border-radius: 30px;
+  display: flex;
 }
 
 body {

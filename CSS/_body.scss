@@ -1,4 +1,53 @@
-.bannerimg {
-    width: 900px;
-    height: 500px;
+@import 'mixin';
+@import 'var';
+
+
+.main-banner {
+    .banner1img {
+        width: 1000px;
+        height: 500px;
+    }
+    .bannerlogo {
+        font-size: 32px;
+    }
+    .banner-desc {
+        font-size: 24px;
+    }
+    .main-banner-footer {
+        display: flex;
+        // Testing Code
+        background-image: url(/Images/Bugatti.jpg);
+        
+        .banner-left {
+            .shopping {
+                .watchbutton {
+                    background-color: red;
+                }
+                .addmore {
+                    background-color: rgb(167, 167, 167);
+                }
+            }
+        }
+        .banner-right {
+            display:flex;
+            .right-icon-1 {
+                .right1img {
+                    width: 150px;
+                    height: 90px;
+                }
+            }
+            .right-icon-2 {
+                .right1img {
+                    width: 150px;
+                    height: 90px;
+                }
+            }
+            .right-icon-3 {
+                .right1img {
+                    width: 150px;
+                    height: 90px;
+                }
+            }
+        }
+    }
 }

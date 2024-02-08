@@ -4,6 +4,20 @@
 @use 'body';
 @use 'mixin';
 @use 'var';
+@use 'sidebar';
+
+.entire-page {
+    display:flex;
+    align-items: center;
+    
+}
+
+.main-content {
+    background-color: gray;
+    border-radius: 30px;
+    display:flex;
+}
+
 
 body {
     margin: 0;

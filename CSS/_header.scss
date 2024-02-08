@@ -1,3 +1,10 @@
-.search {
-    height: 20px;
+@import 'mixin';
+@import 'var';
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    .arrows {
+        display:flex;
+    }
 }

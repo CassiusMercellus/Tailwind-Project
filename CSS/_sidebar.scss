@@ -1,0 +1,81 @@
+@import 'mixin';
+@import 'var';
+
+.Sidebar {
+    border-width: 2px;
+    border-style:outset;
+    border-color: gray;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding:20px;
+    .logoimg {
+        width: 200px;
+        height: 150px;
+    }
+    .sidebuttons {
+        .browsebutton {
+            display: flex;
+            margin: 25px 5px;
+            color:white;
+        }
+        .wishlistbutton {
+            display: flex;
+            margin: 25px 5px;
+            color:white;
+        }
+        .comingsoonbutton {
+            display: flex;
+            margin: 25px 5px;
+            color:white;
+        }
+    }
+    .trailers {
+        font-size: 24px;
+        font-weight:500;
+        color:white;
+    }
+    .new-cars {
+        margin-top: 0px 20px;
+        img {
+            width: 250px;
+            height: 150px;
+            border-radius: 15px;
+            z-index: 0;
+            
+        }
+        .sidepanel1 {
+            margin: 15px 0px;
+            border-radius: 15px;
+            .panelfooter {
+                display:flex;
+                justify-content: space-between;
+                background-color: black;
+                color: white;
+                z-index: 1;
+            }
+        }
+        .sidepanel2 {
+            margin: 15px 0px;
+            border-radius: 15px;
+            .panelfooter {
+                display:flex;
+                justify-content: space-between;
+                background-color: black;
+                color: white;
+                z-index: 1;
+            }
+        }
+        .sidepanel3 {
+            margin: 15px 0px;
+            border-radius: 15px;
+            .panelfooter {
+                display:flex;
+                justify-content: space-between;
+                background-color: black;
+                color: white;
+                z-index: 1;
+            }
+        }
+    }
+    
+}
