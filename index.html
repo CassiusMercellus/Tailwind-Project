@@ -48,9 +48,9 @@
                 <img src="Images/logo.png" alt="logo" class="logoimg">
                 <div class="sidebuttons">
                     <div class="browsebutton">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white bg-red-600 p-3 rounded-full">
                             <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
-                        </svg>
+                        </svg>                          
                         <p>Browse</p>
                     </div>
                     <div class="wishlistbutton">
@@ -103,61 +103,147 @@
                     </div>
                 </div>
             </div>
-            <div class="header">
-                <div class="arrows">
-                    <div class="Larrows">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6 text-white">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                        </svg> 
-                    </div>
-                    <div class="Rarrows">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>                          
-                    </div>
-                </div>
-                <div class="searchbar">
-                    <div class="mic-icon"></div>
-                    <input type="text" placeholder="Search..." class="search">
-                </div>
-                <div class="notification-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-                    </svg>
-                </div>
-                <div class="account">
-                    <div class="avatar"></div>
-                    <div class="text">
-                        <div class="username">John Doe</div>
-                        <div class="email">@JohnDoe</div>
-                    </div>
-                </div>
-            </div>
-            <!-- Main Content -->
-            <div class="main-banner">
-                <img src="Images/Jesko.jpg" alt="banner1" class="banner1img">
-                <div class="bannerlogo">Koensigge Jesko</div>
-                <div class="banner-desc">2024 - 300MPH - RS5 AMG GT3 - Nürburgring Nordschleife</div>
-                <div class="main-banner-footer">
-                    <div class="banner-left">
-                        <div class="shopping">
-                            <p class="watchbutton">Watch</p>
-                            <div class="addmore">
+            <div class="main-page">
+                <div class="header">
+                    <div class="Lheader">
+                        <div class="arrows">
+                            <div class="Larrows">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6 text-slate-400">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                </svg> 
+                            </div>
+                            <div class="Rarrows">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                                </svg>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                </svg>                          
+                            </div>
+                        </div>
+                        <div class="searchbar">
+                            <div class="mic-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                    <path d="M8.25 4.5a3.75 3.75 0 1 1 7.5 0v8.25a3.75 3.75 0 1 1-7.5 0V4.5Z" />
+                                    <path d="M6 10.5a.75.75 0 0 1 .75.75v1.5a5.25 5.25 0 1 0 10.5 0v-1.5a.75.75 0 0 1 1.5 0v1.5a6.751 6.751 0 0 1-6 6.709v2.291h3a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5h3v-2.291a6.751 6.751 0 0 1-6-6.709v-1.5A.75.75 0 0 1 6 10.5Z" />
+                                </svg>                          
+                            </div>
+                            <input type="text" placeholder="Search..." class="search">
+                        </div>
+                    </div>
+                    <div class="Rheader">
+                        <div class="notification-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                            </svg>
+                        </div>
+                        <div class="account">
+                            <div class="avatar"></div>
+                            <div class="text">
+                                <div class="username">John Doe</div>
+                                <div class="email">@JohnDoe</div>
                             </div>
                         </div>
                     </div>
-                    <div class="banner-right">
-                        <div class="right-icon-1">
-                            <img src="Images/Jesko.jpg" alt="banner1" class="right1img">
+                </div>
+                <!-- Main Content -->
+                <div class="main-banner">
+                    <img src="Images/Bugatti.jpg" alt="banner1" class="banner1img">
+                    <div class="banner-content">
+                        <div class="bannerlogo">
+                            <p>Bugatti Veyron</p>
+                            <div class="banner-desc">2024 - 300MPH - RS5 AMG GT3 <br> Nürburgring Nordschleife</div>
                         </div>
-                        <div class="right-icon-2">
-                            <img src="Images/Jesko.jpg" alt="banner1" class="right1img">
+                        
+                        <div class="bannerfooter">
+                            <div class="banner-left">
+                                <div class="shopping">
+                                    <p class="watchbutton">Watch</p>
+                                    <div class="addmore">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-right">
+                                <div class="right-icon-1">
+                                    <img src="Images/Jesko.jpg" alt="banner1" class="right1img">
+                                </div>
+                                <div class="right-icon-2">
+                                    <img src="Images/Jesko.jpg" alt="banner1" class="right1img">
+                                </div>
+                                <div class="right-icon-3">
+                                    <img src="Images/Jesko.jpg" alt="banner1" class="right1img">
+                                </div>
+                            </div>
                         </div>
-                        <div class="right-icon-3">
-                            <img src="Images/Jesko.jpg" alt="banner1" class="right1img">
+                        
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="row1-title">Popcorn Mania</div>
+                    <div class="row1-cards">
+                        <div class="card1">
+                            <img src="Images/Skyline.jpg" class="row1img">
+                            <div class="footer-1">
+                                <div class="footer-1-text">
+                                    <div class="footer-1-title">Skyline</div>
+                                    <div class="footer-1-desc">
+                                        <p>2020 - UA 18+ - 7 Seasons</p>
+                                    </div>
+                                </div>
+                                <div class="3dots">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                        <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card2">
+                            <img src="Images/Skyline.jpg" class="row1img">
+                            <div class="footer-1">
+                                <div class="footer-1-text">
+                                    <div class="footer-1-title">Skyline</div>
+                                    <div class="footer-1-desc">
+                                        <p>2020 - UA 18+ - 7 Seasons</p>
+                                    </div>
+                                </div>
+                                <div class="3dots">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                        <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card3">
+                            <img src="Images/Skyline.jpg" class="row1img">
+                            <div class="footer-1">
+                                <div class="footer-1-text">
+                                    <div class="footer-1-title">Skyline</div>
+                                    <div class="footer-1-desc">
+                                        <p>2020 - UA 18+ - 7 Seasons</p>
+                                    </div>
+                                </div>
+                                <div class="3dots">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                        <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card4">
+                            <img src="Images/Skyline.jpg" class="row1img">
+                            <div class="footer-1">
+                                <div class="footer-1-text">
+                                    <div class="footer-1-title">Skyline</div>
+                                    <div class="footer-1-desc">
+                                        <p>2020 - UA 18+ - 7 Seasons</p>
+                                    </div>
+                                </div>
+                                <div class="3dots">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-white">
+                                        <path fill-rule="evenodd" d="M10.5 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 6a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

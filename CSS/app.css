@@ -1,9 +1,70 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 20px;
 }
-.header .arrows {
+.header .Lheader {
   display: flex;
+  align-items: center;
+}
+.header .Lheader .arrows {
+  display: flex;
+  margin-right: 30px;
+}
+.header .Lheader .arrows .Larrows {
+  margin-right: 5px;
+}
+.header .Lheader .arrows .Rarrows {
+  margin-left: 5px;
+}
+.header .Lheader .searchbar {
+  display: flex;
+  background-color: black;
+  border-radius: 25px;
+  padding: 8px;
+  width: 350px;
+}
+.header .Lheader .searchbar .mic-icon {
+  margin-right: 10px;
+}
+.header .Lheader .searchbar .search {
+  background-color: black;
+  border: none;
+}
+.header .Rheader {
+  display: flex;
+  align-items: center;
+}
+.header .Rheader .notification-icon {
+  background-color: black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 20px;
+}
+.header .Rheader .account {
+  display: flex;
+  background-color: black;
+  padding: 10px;
+  border-radius: 25px;
+}
+.header .Rheader .account .avatar {
+  background-color: blue;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 10px;
+  border-color: white;
+  border-width: 2px;
+}
+.header .Rheader .account .text .username {
+  color: white;
+  font-size: 18px;
+}
+.header .Rheader .account .text .email {
+  color: white;
+  margin-top: -5px;
+  font-size: 14px;
 }
 
 .left-app-buttons {
@@ -69,40 +130,119 @@
   background-color: gray;
 }
 
+.main-banner {
+  position: relative;
+  margin: 20px;
+  border-radius: 25px;
+}
 .main-banner .banner1img {
-  width: 1000px;
-  height: 500px;
+  width: 1300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 70%;
+     object-position: 0% 70%;
 }
-.main-banner .bannerlogo {
-  font-size: 32px;
-}
-.main-banner .banner-desc {
-  font-size: 24px;
-}
-.main-banner .main-banner-footer {
+.main-banner .banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  background-image: url(/Images/Bugatti.jpg);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
 }
-.main-banner .main-banner-footer .banner-left .shopping .watchbutton {
+.main-banner .banner-content .bannerlogo {
+  font-size: 64px;
+  font-weight: 600;
+}
+.main-banner .banner-content .bannerlogo .banner-desc {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(167, 167, 167);
+}
+.main-banner .banner-content .bannerfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-banner .banner-content .bannerfooter .banner-left .shopping {
+  display: flex;
+}
+.main-banner .banner-content .bannerfooter .banner-left .shopping .watchbutton {
   background-color: red;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 15px;
 }
-.main-banner .main-banner-footer .banner-left .shopping .addmore {
+.main-banner .banner-content .bannerfooter .banner-left .shopping .watchbutton:hover {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+}
+.main-banner .banner-content .bannerfooter .banner-left .shopping .addmore {
   background-color: rgb(167, 167, 167);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
 }
-.main-banner .main-banner-footer .banner-right {
+.main-banner .banner-content .bannerfooter .banner-left .shopping .addmore:hover {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+}
+.main-banner .banner-content .bannerfooter .banner-right {
   display: flex;
 }
-.main-banner .main-banner-footer .banner-right .right-icon-1 .right1img {
+.main-banner .banner-content .bannerfooter .banner-right .right-icon-1 .right1img,
+.main-banner .banner-content .bannerfooter .banner-right .right-icon-2 .right1img,
+.main-banner .banner-content .bannerfooter .banner-right .right-icon-3 .right1img {
   width: 150px;
   height: 90px;
+  margin-right: 20px;
+  border-radius: 15px;
 }
-.main-banner .main-banner-footer .banner-right .right-icon-2 .right1img {
-  width: 150px;
-  height: 90px;
+.main-banner .banner-content .bannerfooter .banner-right .right-icon-1 .right1img:hover,
+.main-banner .banner-content .bannerfooter .banner-right .right-icon-2 .right1img:hover,
+.main-banner .banner-content .bannerfooter .banner-right .right-icon-3 .right1img:hover {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
 }
-.main-banner .main-banner-footer .banner-right .right-icon-3 .right1img {
-  width: 150px;
-  height: 90px;
+
+.row1 {
+  margin: 20px;
+}
+.row1 .row1-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+.row1 .row1-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row1 .row1-cards .card1 img, .row1 .row1-cards .card2 img, .row1 .row1-cards .card3 img, .row1 .row1-cards .card4 img {
+  width: 300px;
+  height: 150px;
+  border-radius: 25px;
+}
+.row1 .row1-cards .card1 .footer-1, .row1 .row1-cards .card2 .footer-1, .row1 .row1-cards .card3 .footer-1, .row1 .row1-cards .card4 .footer-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row1 .row1-cards .card1 .footer-1 .footer-1-text .footer-1-title, .row1 .row1-cards .card2 .footer-1 .footer-1-text .footer-1-title, .row1 .row1-cards .card3 .footer-1 .footer-1-text .footer-1-title, .row1 .row1-cards .card4 .footer-1 .footer-1-text .footer-1-title {
+  font-style: 20px;
 }
 
 .Sidebar {
@@ -117,20 +257,13 @@
   width: 200px;
   height: 150px;
 }
-.Sidebar .sidebuttons .browsebutton {
+.Sidebar .sidebuttons .browsebutton, .Sidebar .sidebuttons .wishlistbutton, .Sidebar .sidebuttons .comingsoonbutton {
   display: flex;
   margin: 25px 5px;
   color: white;
 }
-.Sidebar .sidebuttons .wishlistbutton {
-  display: flex;
-  margin: 25px 5px;
-  color: white;
-}
-.Sidebar .sidebuttons .comingsoonbutton {
-  display: flex;
-  margin: 25px 5px;
-  color: white;
+.Sidebar .sidebuttons .browsebutton p, .Sidebar .sidebuttons .wishlistbutton p, .Sidebar .sidebuttons .comingsoonbutton p {
+  padding-left: 10px;
 }
 .Sidebar .trailers {
   font-size: 24px;
@@ -146,38 +279,24 @@
   border-radius: 15px;
   z-index: 0;
 }
-.Sidebar .new-cars .sidepanel1 {
+.Sidebar .new-cars .sidepanel1, .Sidebar .new-cars .sidepanel2, .Sidebar .new-cars .sidepanel3 {
   margin: 15px 0px;
   border-radius: 15px;
+  position: relative;
 }
-.Sidebar .new-cars .sidepanel1 .panelfooter {
+.Sidebar .new-cars .sidepanel1 .panelfooter, .Sidebar .new-cars .sidepanel2 .panelfooter, .Sidebar .new-cars .sidepanel3 .panelfooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  background-color: black;
-  color: white;
-  z-index: 1;
-}
-.Sidebar .new-cars .sidepanel2 {
-  margin: 15px 0px;
-  border-radius: 15px;
-}
-.Sidebar .new-cars .sidepanel2 .panelfooter {
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  z-index: 1;
-}
-.Sidebar .new-cars .sidepanel3 {
-  margin: 15px 0px;
-  border-radius: 15px;
-}
-.Sidebar .new-cars .sidepanel3 .panelfooter {
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  z-index: 1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .entire-page {
@@ -189,6 +308,10 @@
   background-color: gray;
   border-radius: 30px;
   display: flex;
+}
+.main-content .main-page {
+  display: flex;
+  flex-direction: column;
 }
 
 body {

@@ -16,6 +16,10 @@
     background-color: gray;
     border-radius: 30px;
     display:flex;
+    .main-page {
+        display:flex;
+        flex-direction: column;
+    }
 }
 
 

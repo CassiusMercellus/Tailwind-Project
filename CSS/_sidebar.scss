@@ -13,20 +13,13 @@
         height: 150px;
     }
     .sidebuttons {
-        .browsebutton {
+        .browsebutton, .wishlistbutton, .comingsoonbutton {
             display: flex;
             margin: 25px 5px;
             color:white;
-        }
-        .wishlistbutton {
-            display: flex;
-            margin: 25px 5px;
-            color:white;
-        }
-        .comingsoonbutton {
-            display: flex;
-            margin: 25px 5px;
-            color:white;
+            p {
+                padding-left: 10px;
+            }
         }
     }
     .trailers {
@@ -43,37 +36,24 @@
             z-index: 0;
             
         }
-        .sidepanel1 {
+        .sidepanel1, .sidepanel2, .sidepanel3 {
             margin: 15px 0px;
             border-radius: 15px;
+            position: relative;
+            
             .panelfooter {
+                position: absolute; 
+                bottom: 0; 
+                left: 0; 
+                width: 100%; 
+                background-color: rgba(0, 0, 0, 0.8); 
+                color: white;
+                padding: 5px;
+                box-sizing: border-box;
                 display:flex;
                 justify-content: space-between;
-                background-color: black;
-                color: white;
-                z-index: 1;
-            }
-        }
-        .sidepanel2 {
-            margin: 15px 0px;
-            border-radius: 15px;
-            .panelfooter {
-                display:flex;
-                justify-content: space-between;
-                background-color: black;
-                color: white;
-                z-index: 1;
-            }
-        }
-        .sidepanel3 {
-            margin: 15px 0px;
-            border-radius: 15px;
-            .panelfooter {
-                display:flex;
-                justify-content: space-between;
-                background-color: black;
-                color: white;
-                z-index: 1;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
             }
         }
     }
