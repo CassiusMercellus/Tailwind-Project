@@ -1,4 +1,3 @@
-@use 'header';
 @use 'dashboard';
 @use 'body';
 @use 'mixin';
@@ -14,10 +13,6 @@
     border-radius: 30px;
     display:flex;
     margin-top: 1%;
-    .main-page {
-        display:flex;
-        flex-direction: column;
-    }
 }
 
 
