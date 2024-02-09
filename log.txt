@@ -1,0 +1,72 @@
+commit 06d6140530fdb38f4dfd714d017956511673b45f
+Author: Cassius Hill <MarcelusWork@gmail.com>
+Date:   Fri Feb 9 16:06:29 2024 -0700
+
+    finished project
+
+commit adfa32a15138f7f3c4803543a5b01b9392b2999d
+Author: Cassius Hill <MarcelusWork@gmail.com>
+Date:   Thu Feb 8 22:54:31 2024 -0700
+
+    starting to implement TailwindCSS
+
+commit 528c014eea98cb2f92c2c724eea99f535da02c2c
+Author: Cassius Hill <MarcelusWork@gmail.com>
+Date:   Thu Feb 8 20:13:46 2024 -0700
+
+    hovers
+
+commit dd96b96ca95767ce200e5814981d2dfc86ebc603
+Author: Cassius Hill <MarcelusWork@gmail.com>
+Date:   Thu Feb 8 17:24:21 2024 -0700
+
+    finished scss
+
+commit ec22e920060351f7b2e4816d06ac809fc10b7244
+Author: CassiusMercellus <148610250+CassiusMercellus@users.noreply.github.com>
+Date:   Thu Feb 8 10:25:32 2024 -0800
+
+    added row1
+
+commit eb6e68799bee92d31fb2e0832fba8a138ffec9f2
+Author: Cassius Hill <MarcelusWork@gmail.com>
+Date:   Wed Feb 7 22:40:24 2024 -0700
+
+    added most of the content
+
+commit 75d7528c4f3b8de01eaab175f95063b44b006ced
+Author: CassiusMercellus <148610250+CassiusMercellus@users.noreply.github.com>
+Date:   Wed Feb 7 14:53:43 2024 -0800
+
+    flexed many things
+
+commit 7213fe5e9c36bcd716f7b4846c72fab2d6d20a18
+Author: CassiusMercellus <148610250+CassiusMercellus@users.noreply.github.com>
+Date:   Tue Feb 6 08:47:55 2024 -0800
+
+    broken tailwind
+
+commit 59fbf91c3d643eb992c320db8e3df7697b922f9b
+Author: Cassius Hill <MarcelusWork@gmail.com>
+Date:   Mon Feb 5 22:45:17 2024 -0700
+
+    fixing
+
+commit 0f754be50cbbb87ae535ef2ceb6afd92dc67daf8
+Merge: d66d728 b2751ef
+Author: Cassius Hill <MarcelusWork@gmail.com>
+Date:   Mon Feb 5 22:42:14 2024 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+commit d66d728338dfa31315f957caadcb0bc99b2ee99e
+Author: Cassius Hill <MarcelusWork@gmail.com>
+Date:   Mon Feb 5 22:35:21 2024 -0700
+
+    finished adding files
+
+commit b2751efe312f80b43c24da71955d33d0bd67673e
+Author: CassiusMercellus <148610250+CassiusMercellus@users.noreply.github.com>
+Date:   Mon Feb 5 12:50:58 2024 -0800
+
+    first commit
