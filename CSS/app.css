@@ -70,14 +70,12 @@
 .left-app-buttons {
   display: flex;
   flex-direction: column;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
   margin: 10px;
   padding: 10px 5px;
   border-radius: 30px;
   border-width: 2px;
-  border-style: outset;
-  border-color: gray;
 }
 .left-app-buttons .app-button-1 {
   display: flex;
@@ -231,18 +229,85 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.row1 .row1-cards .card1, .row1 .row1-cards .card2, .row1 .row1-cards .card3, .row1 .row1-cards .card4 {
+  position: relative;
+}
 .row1 .row1-cards .card1 img, .row1 .row1-cards .card2 img, .row1 .row1-cards .card3 img, .row1 .row1-cards .card4 img {
   width: 300px;
-  height: 150px;
+  height: 170px;
   border-radius: 25px;
 }
 .row1 .row1-cards .card1 .footer-1, .row1 .row1-cards .card2 .footer-1, .row1 .row1-cards .card3 .footer-1, .row1 .row1-cards .card4 .footer-1 {
   display: flex;
+  position: absolute;
+  bottom: 0;
   justify-content: space-between;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
   align-items: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.row1 .row1-cards .card1 .footer-1 .footer-1-text, .row1 .row1-cards .card2 .footer-1 .footer-1-text, .row1 .row1-cards .card3 .footer-1 .footer-1-text, .row1 .row1-cards .card4 .footer-1 .footer-1-text {
+  padding: 0px 20px;
 }
 .row1 .row1-cards .card1 .footer-1 .footer-1-text .footer-1-title, .row1 .row1-cards .card2 .footer-1 .footer-1-text .footer-1-title, .row1 .row1-cards .card3 .footer-1 .footer-1-text .footer-1-title, .row1 .row1-cards .card4 .footer-1 .footer-1-text .footer-1-title {
+  color: white;
   font-style: 20px;
+}
+.row1 .row1-cards .card1 .footer-1 .footer-1-text .footer-1-desc, .row1 .row1-cards .card2 .footer-1 .footer-1-text .footer-1-desc, .row1 .row1-cards .card3 .footer-1 .footer-1-text .footer-1-desc, .row1 .row1-cards .card4 .footer-1 .footer-1-text .footer-1-desc {
+  color: white;
+}
+
+.row2 {
+  margin: 20px;
+}
+.row2 .row2-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+.row2 .row2-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row2 .row2-cards .card1, .row2 .row2-cards .card2, .row2 .row2-cards .card3, .row2 .row2-cards .card4 {
+  position: relative;
+}
+.row2 .row2-cards .card1 img, .row2 .row2-cards .card2 img, .row2 .row2-cards .card3 img, .row2 .row2-cards .card4 img {
+  width: 300px;
+  height: 150px;
+  border-radius: 25px;
+}
+.row2 .row2-cards .card1 .footer-2, .row2 .row2-cards .card2 .footer-2, .row2 .row2-cards .card3 .footer-2, .row2 .row2-cards .card4 .footer-2 {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.row2 .row2-cards .card1 .footer-2 .footer-2-text, .row2 .row2-cards .card2 .footer-2 .footer-2-text, .row2 .row2-cards .card3 .footer-2 .footer-2-text, .row2 .row2-cards .card4 .footer-2 .footer-2-text {
+  padding: 0px 20px;
+  width: 100%;
+}
+.row2 .row2-cards .card1 .footer-2 .footer-2-text .footer-2-title, .row2 .row2-cards .card2 .footer-2 .footer-2-text .footer-2-title, .row2 .row2-cards .card3 .footer-2 .footer-2-text .footer-2-title, .row2 .row2-cards .card4 .footer-2 .footer-2-text .footer-2-title {
+  color: white;
+  font-style: 20px;
+}
+.row2 .row2-cards .card1 .footer-2 .footer-2-text .footer-2-desc, .row2 .row2-cards .card2 .footer-2 .footer-2-text .footer-2-desc, .row2 .row2-cards .card3 .footer-2 .footer-2-text .footer-2-desc, .row2 .row2-cards .card4 .footer-2 .footer-2-text .footer-2-desc {
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+}
+.row2 .row2-cards .card1 .footer-2 .footer-2-text .footer-2-desc progress, .row2 .row2-cards .card2 .footer-2 .footer-2-text .footer-2-desc progress, .row2 .row2-cards .card3 .footer-2 .footer-2-text .footer-2-desc progress, .row2 .row2-cards .card4 .footer-2 .footer-2-text .footer-2-desc progress {
+  color: red;
+  height: 8px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .Sidebar {
@@ -298,16 +363,27 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.Sidebar .new-cars .sidepanel1 .panelfooter .playbutton, .Sidebar .new-cars .sidepanel2 .panelfooter .playbutton, .Sidebar .new-cars .sidepanel3 .panelfooter .playbutton {
+  background-color: rgba(75, 75, 75, 0.5);
+  padding: 3px;
+  border-radius: 15px;
+}
 
 .entire-page {
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .main-content {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 30px;
   display: flex;
+  margin-top: 1%;
 }
 .main-content .main-page {
   display: flex;

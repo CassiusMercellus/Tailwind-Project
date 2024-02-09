@@ -4,14 +4,13 @@
 .left-app-buttons {
     display:flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
     margin: 10px;
     padding: 10px 5px;
     border-radius: 30px;
     border-width: 2px;
-    border-style:outset;
-    border-color: gray;
+
     .app-button-1 {
         @include app-button;
         background-color: $appbuttonselected;

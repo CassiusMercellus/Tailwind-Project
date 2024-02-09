@@ -54,8 +54,13 @@
                 justify-content: space-between;
                 border-bottom-left-radius: 15px;
                 border-bottom-right-radius: 15px;
+
+                .playbutton {
+                    background-color: rgba(75, 75, 75, 0.5);
+                    padding: 3px;
+                    border-radius: 15px;
+                }
             }
         }
     }
-    
 }
