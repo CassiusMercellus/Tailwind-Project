@@ -15,8 +15,20 @@
 .header .Lheader .arrows .Larrows {
   margin-right: 5px;
 }
+.header .Lheader .arrows .Larrows:hover {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
+}
 .header .Lheader .arrows .Rarrows {
   margin-left: 5px;
+}
+.header .Lheader .arrows .Rarrows:hover {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
 }
 .header .Lheader .searchbar {
   display: flex;
@@ -32,6 +44,12 @@
   background-color: black;
   border: none;
 }
+.header .Lheader .searchbar:hover {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
+}
 .header .Rheader {
   display: flex;
   align-items: center;
@@ -41,6 +59,12 @@
   border-radius: 25px;
   padding: 10px;
   margin-right: 20px;
+}
+.header .Rheader .notification-icon:hover {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
 }
 .header .Rheader .account {
   display: flex;
@@ -65,6 +89,12 @@
   color: white;
   margin-top: -5px;
   font-size: 14px;
+}
+.header .Rheader .account:hover {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
 }
 
 .left-app-buttons {
@@ -258,6 +288,12 @@
 .row1 .row1-cards .card1 .footer-1 .footer-1-text .footer-1-desc, .row1 .row1-cards .card2 .footer-1 .footer-1-text .footer-1-desc, .row1 .row1-cards .card3 .footer-1 .footer-1-text .footer-1-desc, .row1 .row1-cards .card4 .footer-1 .footer-1-text .footer-1-desc {
   color: white;
 }
+.row1 .row1-cards .card1:hover, .row1 .row1-cards .card2:hover, .row1 .row1-cards .card3:hover, .row1 .row1-cards .card4:hover {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
+}
 
 .row2 {
   margin: 20px;
@@ -309,6 +345,12 @@
   width: 100%;
   border-radius: 5px;
 }
+.row2 .row2-cards .card1:hover, .row2 .row2-cards .card2:hover, .row2 .row2-cards .card3:hover, .row2 .row2-cards .card4:hover {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 25px;
+}
 
 .Sidebar {
   border-width: 2px;
@@ -329,6 +371,12 @@
 }
 .Sidebar .sidebuttons .browsebutton p, .Sidebar .sidebuttons .wishlistbutton p, .Sidebar .sidebuttons .comingsoonbutton p {
   padding-left: 10px;
+}
+.Sidebar .sidebuttons .browsebutton:hover, .Sidebar .sidebuttons .wishlistbutton:hover, .Sidebar .sidebuttons .comingsoonbutton:hover {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
 }
 .Sidebar .trailers {
   font-size: 24px;
@@ -366,6 +414,12 @@
 .Sidebar .new-cars .sidepanel1 .panelfooter .playbutton, .Sidebar .new-cars .sidepanel2 .panelfooter .playbutton, .Sidebar .new-cars .sidepanel3 .panelfooter .playbutton {
   background-color: rgba(75, 75, 75, 0.5);
   padding: 3px;
+  border-radius: 15px;
+}
+.Sidebar .new-cars .sidepanel1:hover, .Sidebar .new-cars .sidepanel2:hover, .Sidebar .new-cars .sidepanel3:hover {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
   border-radius: 15px;
 }
 

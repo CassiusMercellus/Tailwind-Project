@@ -21,6 +21,12 @@
                 padding-left: 10px;
             }
         }
+        .browsebutton:hover, .wishlistbutton:hover, .comingsoonbutton:hover {
+            border-color: white;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 10px;
+        }
     }
     .trailers {
         font-size: 24px;
@@ -61,6 +67,12 @@
                     border-radius: 15px;
                 }
             }
+        }
+        .sidepanel1:hover, .sidepanel2:hover, .sidepanel3:hover {
+            border-color: red;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 15px;
         }
     }
 }
