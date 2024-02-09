@@ -1,5 +1,6 @@
 @import 'mixin';
 @import 'var';
+@import 'breakpoints';
 
 .Sidebar {
     border-width: 2px;
@@ -8,6 +9,79 @@
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     padding:20px;
+
+    @include xs {
+
+    }
+    @include sm {
+    
+    }
+    @include md {
+        
+    }
+    @include lg {
+        width: 0;
+        border-width: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding:0;
+        z-index: -2;
+        .logoimg {
+            width: 0;
+            height: 0;
+        }
+        .sidebuttons {
+            .browsebutton, .wishlistbutton, .comingsoonbutton {
+                margin: 0;
+                p {
+                    padding-left: 0;
+                }
+            }
+            .browsebutton:hover, .wishlistbutton:hover, .comingsoonbutton:hover {
+                border-width: 0;
+                border-radius: 0;
+            }
+        }
+        .trailers {
+            font-size: 0;
+        }
+        .new-cars {
+            margin-top: 0;
+            img {
+                width: 0;
+                height: 0;
+                border-radius: 0;
+                z-index: 0;
+                
+            }
+            .sidepanel1, .sidepanel2, .sidepanel3 {
+                margin: 0;
+                border-radius: 0;
+                
+                .panelfooter {
+                    bottom: 0; 
+                    left: 0; 
+                    width: 0; 
+                    padding: 0;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+    
+                    .playbutton {
+                        padding: 0;
+                        border-radius: 0;
+                    }
+                }
+            }
+            .sidepanel1:hover, .sidepanel2:hover, .sidepanel3:hover {
+                border-width: 0;
+                border-radius: 0;
+            }
+        }
+    }
+    @include xl {
+    
+    }
+
     .logoimg {
         width: 200px;
         height: 150px;

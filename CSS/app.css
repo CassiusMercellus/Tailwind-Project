@@ -97,15 +97,44 @@
   border-radius: 25px;
 }
 
+/**
+@include xs {
+
+}
+@include sm {
+
+}
+@include md {
+
+}
+@include lg {
+
+}
+@include xl {
+
+}
+**/
 .left-app-buttons {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
   margin: 10px;
   padding: 10px 5px;
   border-radius: 30px;
   border-width: 2px;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .left-app-buttons {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    border-width: 0px;
+    z-index: -2;
+  }
 }
 .left-app-buttons .app-button-1 {
   display: flex;
@@ -158,6 +187,23 @@
   background-color: gray;
 }
 
+/**
+@include xs {
+
+}
+@include sm {
+
+}
+@include md {
+
+}
+@include lg {
+
+}
+@include xl {
+
+}
+**/
 .main-banner {
   position: relative;
   margin: 20px;
@@ -262,6 +308,13 @@
 .row1 .row1-cards .card1, .row1 .row1-cards .card2, .row1 .row1-cards .card3, .row1 .row1-cards .card4 {
   position: relative;
 }
+@media (max-width: 960px) {
+  .row1 .row1-cards .card1 img, .row1 .row1-cards .card2 img, .row1 .row1-cards .card3 img, .row1 .row1-cards .card4 img {
+    width: 0;
+    height: 0;
+    border-radius: 0;
+  }
+}
 .row1 .row1-cards .card1 img, .row1 .row1-cards .card2 img, .row1 .row1-cards .card3 img, .row1 .row1-cards .card4 img {
   width: 300px;
   height: 170px;
@@ -352,6 +405,23 @@
   border-radius: 25px;
 }
 
+/**
+@include xs {
+
+}
+@include sm {
+
+}
+@include md {
+
+}
+@include lg {
+
+}
+@include xl {
+
+}
+**/
 .Sidebar {
   border-width: 2px;
   border-style: outset;
@@ -359,6 +429,62 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   padding: 20px;
+}
+@media (max-width: 960px) {
+  .Sidebar {
+    width: 0;
+    border-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0;
+    z-index: -2;
+  }
+  .Sidebar .logoimg {
+    width: 0;
+    height: 0;
+  }
+  .Sidebar .sidebuttons .browsebutton, .Sidebar .sidebuttons .wishlistbutton, .Sidebar .sidebuttons .comingsoonbutton {
+    margin: 0;
+  }
+  .Sidebar .sidebuttons .browsebutton p, .Sidebar .sidebuttons .wishlistbutton p, .Sidebar .sidebuttons .comingsoonbutton p {
+    padding-left: 0;
+  }
+  .Sidebar .sidebuttons .browsebutton:hover, .Sidebar .sidebuttons .wishlistbutton:hover, .Sidebar .sidebuttons .comingsoonbutton:hover {
+    border-width: 0;
+    border-radius: 0;
+  }
+  .Sidebar .trailers {
+    font-size: 0;
+  }
+  .Sidebar .new-cars {
+    margin-top: 0;
+  }
+  .Sidebar .new-cars img {
+    width: 0;
+    height: 0;
+    border-radius: 0;
+    z-index: 0;
+  }
+  .Sidebar .new-cars .sidepanel1, .Sidebar .new-cars .sidepanel2, .Sidebar .new-cars .sidepanel3 {
+    margin: 0;
+    border-radius: 0;
+  }
+  .Sidebar .new-cars .sidepanel1 .panelfooter, .Sidebar .new-cars .sidepanel2 .panelfooter, .Sidebar .new-cars .sidepanel3 .panelfooter {
+    bottom: 0;
+    left: 0;
+    width: 0;
+    padding: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .Sidebar .new-cars .sidepanel1 .panelfooter .playbutton, .Sidebar .new-cars .sidepanel2 .panelfooter .playbutton, .Sidebar .new-cars .sidepanel3 .panelfooter .playbutton {
+    padding: 0;
+    border-radius: 0;
+  }
+  .Sidebar .new-cars .sidepanel1:hover, .Sidebar .new-cars .sidepanel2:hover, .Sidebar .new-cars .sidepanel3:hover {
+    border-width: 0;
+    border-radius: 0;
+  }
 }
 .Sidebar .logoimg {
   width: 200px;
@@ -423,13 +549,23 @@
   border-radius: 15px;
 }
 
-.entire-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-}
+/**
+@include xs {
 
+}
+@include sm {
+
+}
+@include md {
+
+}
+@include lg {
+
+}
+@include xl {
+
+}
+**/
 .main-content {
   background-color: rgba(0, 0, 0, 0.8);
   border-color: white;
@@ -456,8 +592,8 @@ body .alignment {
   width: 100%;
 }
 body header .backgroundimg {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   z-index: -1;
   position: absolute;
 }/*# sourceMappingURL=app.css.map */
